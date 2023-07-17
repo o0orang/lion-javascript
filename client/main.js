@@ -1,10 +1,6 @@
-
-
-
 /* eslint-disable */
 
 console.log('hello hs!');
-
 
 /* eslint-enable */
 
