@@ -1,7 +1,22 @@
-/* eslint-disable */
+const first = getNode('#firstNumber');
+const second = getNode('#secondNumber');
+const result = getNode('.result');
 
-console.log('hello hs!');
+// 1. input value 값 가져오기
 
-/* eslint-enable */
+// 2. 두 수의 합 더하기
 
-const b = 10;
+// 3. result 출력 하기
+
+function handleInput() {
+  let firstValue = +first.value;
+  let secondValue = second.value / 1;
+  let total = firstValue + secondValue;
+
+  clearContents(result);
+
+  insertLast(result, total);
+}
+
+first.addEventListener('input', handleInput);
+second.addEventListener('input', handleInput);
